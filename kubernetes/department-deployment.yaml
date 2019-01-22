@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: department
-        image: piomin/department:1.0
+        image: basivireddy/department:1.0
         ports:
         - containerPort: 8080
         env:
@@ -43,6 +43,7 @@ metadata:
   labels:
     app: department
 spec:
+  type: ClusterIP
   ports:
   - port: 8080
     protocol: TCP
